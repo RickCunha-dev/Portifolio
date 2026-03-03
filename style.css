@@ -11,12 +11,12 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 body {
     background-color: var(--bg);
     color: var(--texto);
-    font-family: "Space Grotesk", sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
     font-weight: bold;
@@ -24,8 +24,8 @@ body {
 }
 
 .site-header {
-    border-bottom: 1px solid var(--borda);
-    padding: 10px;
+    border-bottom: 1px solid var(--laranja);
+    padding: 6px;
     display: flex;
     justify-content: space-between;
     background: #0D0D0D;
@@ -77,3 +77,70 @@ body {
     color: var(--laranja);
 }
 
+.hero {
+    border: 1px solid red;
+    height: auto;
+    min-height: 800px;
+    display: flex;
+}
+
+.hero .bio {
+    border: 1px solid red;
+    /* padding: 20px; */
+}
+
+.hero h1 {
+    margin-top: 5%;
+    margin-left: 6%;
+    font-size: 75px;
+    line-height: 60px;
+}
+
+.hero h2 {
+    margin: 4% 0 0 6%;
+    font-size: 30px;
+    font-family: 'JetBrainsMono', monospace;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: var(--laranja);
+}
+
+.hero p {
+    margin-top: 4%;
+    margin-left: 7%;
+    color: #c0c0c0;
+    font-size: 17px;
+    border-left: 2px solid var(--borda);
+    padding: 10px;
+    width: 35%;
+}
+
+.hero .img {
+    border: 2px solid white;
+    width: 40%;
+}
+
+.hero .buttons__Hero {
+    border: 1px solid red;
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+.buttons__Hero #viewProject {
+    padding: 14px 45px;
+    background: var(--laranja);
+    color: var(--texto);
+    font-weight: 800;
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: 3px;
+}
+
+.buttons__Hero #conect {
+    padding: 14px 35px;
+    background: var(--bg);
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 2%;
+}
