@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RickDev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="site-header">
-        <a class="site-header__brand"><span class="data">RickDev</span><span class="v">.v1</span></a>
-
+        <a href="#home" class="site-header__brand">
+            <span class="data">RickDev</span><span class="v">.v1</span>
+        </a>
         <nav class="main-nav">
             <ul class="main-nav__list">
                 <li><a href="#home">HOME</a></li>
@@ -27,29 +26,51 @@
         </nav>
     </header>
 
-    <div class="hero">
+    <section class="hero" id="home">
+
         <div class="bio">
-            <h1>RICARDO WEMERSON<br>CUNHA DE OLIVEIRA</h1>
+            <h1 class="glitch" data-text="RICARDO WEMERSON&#10;CUNHA DE OLIVEIRA">
+                RICARDO WEMERSON<br>CUNHA DE OLIVEIRA
+            </h1>
 
             <h2>DEV FULL STACK | ANÁLISE DE DADOS</h2>
 
-            <p>Desenvolvedor Full Stack formado, atualmente aprofundando conhecimentos em Análise e Desenvolvimento
-                de Sistemas. Criando soluções robustas do front ao back-end.
-            </p>
-    
-        <div class="buttons__Hero">
-            <button id="viewProject">VER PROJETOS</button>
-            <button id="conect" >CONECTAR</button>
-        </div>
-    </div>
+            <p>Desenvolvedor Full Stack formado e instrutor de tecnologia com experiência em
+            desenvolvimento web, ensino técnico e liderança em projetos. Liderou front-end no
+            Hackathon Infinity School com contribuição relevante no back-end. Projeto que resultou
+            no reconhecimento e contratação pela instituição. Reconhecido pelo aprendizado rápido
+            e pelo trabalho em equipe, promovido de aluno a instrutor, atualmente avaliado 5/5 pelos alunos.</p>
 
-    <div class="img">
-        <div class="profile-frame">
-            <img src="../assets/ricardo.jpeg" alt="Ricardo Wemerson Cunha de Olibeira">
-            <div class="profile-frame__overlay"></div>
-            <span class="profile-frame__tag"></span>
+            <div class="buttons__Hero">
+                <button id="viewProject">VER PROJETOS</button>
+                <button id="conect">CONECTAR</button>
+            </div>
         </div>
-    </div>
-    </div>
+
+        <div class="profile-orbit-container">
+
+            <div class="profile-frame">
+                <img src="../assets/ricardo.jpeg" alt="Ricardo Wemerson">
+                <div class="profile-frame__overlay"></div>
+                <span class="profile-frame__tag">DEV MODE</span>
+            </div>
+
+            <div class="orbit-ring orbit-ring-1">
+                <span class="orbit-tag">JavaScript</span>
+                <span class="orbit-tag">Node.js</span>
+            </div>
+
+            <div class="orbit-ring orbit-ring-2">
+                <span class="orbit-tag">Selenium</span>
+                <span class="orbit-tag">React</span>
+            </div>
+
+            <div class="orbit-ring orbit-ring-3">
+                <span class="orbit-tag">Python</span>
+                <span class="orbit-tag">Django</span>
+            </div>
+
+        </div>
+    </section>
 </body>
 </html>
