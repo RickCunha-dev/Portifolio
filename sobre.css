@@ -1,0 +1,47 @@
+
+.about-me, .about-me__01 {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.about-me__01 {
+    margin-left: 15%;
+    font-size: 35px;
+    color: var(--laranja);
+    
+}
+
+
+.about-me {
+    /* border: 1px solid red; */
+    border-left: 3px dashed rgb(50, 50, 50);
+    padding: 40px;
+    width: 70%;
+    min-height: 500px;
+    margin-left: 15%;
+    display: flex;
+}
+
+.about-me .about-grid {
+    border: 1px solid red;
+    width: 60%;
+}
+
+.about-me .about-status {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px;
+    gap: 80px;
+}
+
+.about-me .about-status .info {
+    border-bottom: 2px solid rgb(255, 255, 255, 0.15);
+    width: 100%;
+    padding: 20px;
+}
+
+/* .about-me .info .label-status {
+    color: ;
+} */

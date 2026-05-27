@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RickDev</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="sobre.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
@@ -12,6 +14,7 @@
 
 <body>
     <header class="site-header">
+        <div class="header__brand"></div>
         <a href="#home" class="site-header__brand">
             <span class="data">RickDev</span><span class="v">.v1</span>
         </a>
@@ -29,8 +32,8 @@
     <section class="hero" id="home">
 
         <div class="bio">
-            <h1 class="glitch" data-text="RICARDO WEMERSON&#10;CUNHA DE OLIVEIRA">
-                RICARDO WEMERSON<br>CUNHA DE OLIVEIRA
+            <h1 class="glitch" data-text="RICARDO WEMERSON CUNHA DE OLIVEIRA">
+                RICARDO WEMERSON CUNHA DE OLIVEIRA
             </h1>
 
             <h2>DEV FULL STACK | ANÁLISE DE DADOS</h2>
@@ -70,7 +73,56 @@
                 <span class="orbit-tag">Django</span>
             </div>
 
+            <!-- Criando bolinhas no HTML para facilitar manutenção. -->
+            <span class="orbit-dot" style="width:8px;height:8px;background:var(--azul);box-shadow:0 0 8px var(--azul);top:30px;left:52%;animation:pulse-dot 2.1s ease-in-out infinite; border-radius: 50%;"></span>
+            <span class="orbit-dot" style="width:6px;height:6px;background:var(--azul);box-shadow:0 0 6px var(--azul);top:15%;right:40px;animation:pulse-dot2 1.8s ease-in-out infinite 0.4s; border-radius: 50%;"></span>
+            <span class="orbit-dot" style="width:10px;height:10px;background:var(--laranja);box-shadow:0 0 10px var(--laranja);bottom:80px;left:58%;animation:pulse-dot 2.5s ease-in-out infinite 0.8s; border-radius: 50%;"></span>
+            <span class="orbit-dot" style="width:7px;height:10px;background:var(--laranja);box-shadow:0 0 7px var(--laranja);top:42%;left:20px;animation:pulse-dot3 1.6s ease-in-out infinite 0.2s; border-radius: 50%;"></span>
+            <span class="orbit-dot" style="width:9px;height:9px;background:var(--azul);box-shadow:0 0 9px var(--azul);bottom:100px;right:35px;animation:pulse-dot2 2.2s ease-in-out infinite 1s; border-radius: 50%;"></span>
+            <span class="orbit-dot" style="width:5px;height:5px;background:var(--laranja);box-shadow:0 0 5px var(--laranja);top:28%;right:25px;animation:pulse-dot 1.9s ease-in-out infinite 0.6s; border-radius: 50%;"></span>
+            <span class="orbit-dot" style="width:8px;height:8px;background:var(--azul);box-shadow:0 0 8px var(--azul);bottom:50px;left:32%;animation:pulse-dot3 2.3s ease-in-out infinite 1.2s; border-radius: 50%;"></span>
+            <span class="orbit-dot" style="width:6px;height:6px;background:var(--laranja);box-shadow:0 0 6px var(--laranja);top:18%;left:22%;animation:pulse-dot2 2s ease-in-out infinite 0.3s; border-radius: 50%;"></span>
+
         </div>
+    </section>
+
+    <span class="about-me__01">01</span>
+    <section class="about-me">
+
+        
+        <div class="about-grid">
+            <h1>PORTIFÓLIO</h1>
+            <span>[IDENTIFY_VERIFICACION_COMPLETE]</span>
+
+            <p>Sou um desenvolvedor Full Stack Formado, com uma base sólida na criação de aplicações web completas. Atualmente, estou
+                cursando Análise e Desenvolvimento de Sistemas (ADS) para elevar meu nível técnico e compreensão arquitetural de software.
+            
+                Minha paixão reside em construir sistemas eficientes, escaláveis e com intefaces intuitivas, unindo lógica do back-end com a
+                fluidez do front-end.
+            </p>
+
+        </div>
+
+
+        <div class="about-status">
+            <div class="info">
+                <span class="label-status">Localização</span><br>
+                <span class="value-status">Contagem / MG</span>
+            </div>
+            
+            
+            <div class="info">
+                <span class="label-status">Formação</span><br>
+                <span class="value-status">Full Stack / ADS</span>
+            </div>
+            
+            <div class="info">
+                <span class="label-status">Disponibilidade</span><br>
+                <span class="value-status">Projetos & Freelance</span>
+            </div>
+        </div>
+
+
     </section>
 </body>
 </html>
