@@ -3,8 +3,9 @@
     --laranja: #FF6B00;
     --azul: #00E5FF;
     --texto: #E0E0E0;
-    --card-bg: rgba(20, 20, 20, 0.8);
+    --card-bg: rgba(20, 20, 20, 0.9);
     --borda: rgba(255, 255, 255, 0.1);
+    --number-title: 45px;
 }
 
 * {

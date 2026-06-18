@@ -4,44 +4,123 @@
 }
 
 .about-me__01 {
-    margin-left: 15%;
-    font-size: 35px;
-    color: var(--laranja);
-    
+    /* margin-left: 0%; */
+    font-size: var(--number-title);
+    color: rgba(255, 85, 0, 0.4);
+    padding: 0;
+}
+
+.parte1 {
+    height: 100vh;
+    border-left: 4px dashed var(--borda);
+    border-right: 4px dashed var(--borda);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 .about-me {
     /* border: 1px solid red; */
-    border-left: 3px dashed rgb(50, 50, 50);
-    padding: 40px;
-    width: 70%;
+    /* border-left: 3px dashed rgb(50, 50, 50); */
+    /* padding: 20px 15%; */
+    width: 100%;
     min-height: 500px;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
 }
 
+
 .about-me .about-grid {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 60%;
+    font-size: 20px;
+    padding: 0px 30px;
+}
+
+.title {
+    /* border: 1px solid red; */
+    line-height: 1.0;
+    font-size: 25px;
+}
+
+.line-title {
+    border: 2px solid var(--azul);
+    width: 150px;
+    margin-top: 15px;
+}
+
+
+.about__subtitle {
+    font-size: 13px;
+    color: var(--borda);
+    font-weight: bold;
+}
+
+.about-grid p {
+    margin-top: 10%;
 }
 
 .about-me .about-status {
-    width: 40%;
+    border: 2px solid var(--borda);
+    background-color: var(--card-bg);
+}
+
+.about-me .about-status::before {
+    content: 'DATA BLOCK';
+    position: absolute;
+    color: var(--laranja);
+    top: -10px;
+    right: 20px;
+    background: var(--bg);
+    padding: 0 10px;
+    border: 1px solid var(--laranja);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+}
+
+.about-me .about-status {
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 40px;
-    gap: 80px;
+    padding: 0 40px;
+    /* gap: 80px; */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
 }
 
 .about-me .about-status .info {
-    border-bottom: 2px solid rgb(255, 255, 255, 0.15);
+    /* border: 1px solid red; */
     width: 100%;
-    padding: 20px;
+    padding: 30px;
 }
 
-/* .about-me .info .label-status {
-    color: ;
-} */
+.about-status .info .label-status {
+    color: var(--azul);
+    font-size: 12px;
+}
+
+.about-status .info .value-status {
+    font-size: 20px;
+}
+
+.line-status {
+    border: 1pt solid var(--borda);
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 5%;
+
+}
+
+.about-me .about-status:hover {
+    transform: translateX(-10px);
+    transform: translateY(-12px);
+    box-shadow: 10px 10px 0px var(--azul);
+}

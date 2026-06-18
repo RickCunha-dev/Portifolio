@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="profile.css">
     <link rel="stylesheet" href="sobre.css">
+    <link rel="stylesheet" href="stack.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -86,43 +88,94 @@
         </div>
     </section>
 
-    <span class="about-me__01">01</span>
-    <section class="about-me">
+    <div class="parte1" id="sobre">
+        <span class="about-me__01">01</span>
+        <section class="about-me">
 
+
+                
+            <div class="about-grid">
+                <div class="title">
+                    <h1>PORTIFÓLIO</h1>
+                    <div class="line-title"></div>
+                    <span class="about__subtitle">[IDENTIFY_VERIFICACION_COMPLETE]</span>
+                </div>
+                
+                <p>Sou um desenvolvedor Full Stack Formado, com uma base sólida na criação de aplicações web completas. Atualmente, estou
+                    cursando Análise e Desenvolvimento de Sistemas (ADS) para elevar meu nível técnico e compreensão arquitetural de software.
+                    
+                    Minha paixão reside em construir sistemas eficientes, escaláveis e com intefaces intuitivas, unindo lógica do back-end com a
+                    fluidez do front-end.
+                </p>
+                
+            </div>
+            
+            
+            <div class="about-status">
+                <div class="info">
+                    <span class="label-status">LOCALIZAÇÃO</span><br>
+                    <span class="value-status">Contagem / MG</span>
+                    <div class="line-status"></div>
+                </div>
+                
+                
+                <div class="info">
+                    <span class="label-status">FORMAÇÃO</span><br>
+                    <span class="value-status">Full Stack / ADS</span>
+                    <div class="line-status"></div>
+                </div>
+                
+                <div class="info">
+                    <span class="label-status">DISPONIBILIDADE</span><br>
+                    <span class="value-status">Projetos & Freelance</span>
+                    <div class="line-status"></div>
+                </div>
+            </div>
+        </section>
+    </div>
         
-        <div class="about-grid">
-            <h1>PORTIFÓLIO</h1>
-            <span>[IDENTIFY_VERIFICACION_COMPLETE]</span>
-
-            <p>Sou um desenvolvedor Full Stack Formado, com uma base sólida na criação de aplicações web completas. Atualmente, estou
-                cursando Análise e Desenvolvimento de Sistemas (ADS) para elevar meu nível técnico e compreensão arquitetural de software.
-            
-                Minha paixão reside em construir sistemas eficientes, escaláveis e com intefaces intuitivas, unindo lógica do back-end com a
-                fluidez do front-end.
-            </p>
-
-        </div>
-
-
-        <div class="about-status">
-            <div class="info">
-                <span class="label-status">Localização</span><br>
-                <span class="value-status">Contagem / MG</span>
+    <div class="parte2">
+        <span class="about-me__01">02</span>
+        <section class="stacks-container">
+            <div class="title">
+                <h1>STACKS TECNOLOGIA</h1>
+                <div class="line-title"></div>
+                <span class="about__subtitle">[IDENTIFY_VERIFICACION_COMPLETE]</span>
             </div>
-            
-            
-            <div class="info">
-                <span class="label-status">Formação</span><br>
-                <span class="value-status">Full Stack / ADS</span>
-            </div>
-            
-            <div class="info">
-                <span class="label-status">Disponibilidade</span><br>
-                <span class="value-status">Projetos & Freelance</span>
-            </div>
-        </div>
+            <!-- Obs: Passar a barra de progresso para JS. -->
+            <div class="stacks">
+                
+                <div class="skill-card card" data-skill="database">
+                    <div class="skill-info">
+                        <span class="skill-name">
+                            Back-end (Python/Selenium)
+                        </span>
+                        <span class="skill-percent">90%</span>
+                    </div>
 
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;" data-target="90%"></div>
+                    </div>
+                </div>
 
-    </section>
+                <div class="skill-card card">
+                    <div class="skill-info">
+                        <span class="skill-name">Front-end (Django/React)</span>
+                        <span class="skill-percent">30%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%;" data-target="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card card"></div>
+                <div class="skill-card card"></div>
+                <div class="skill-card card"></div>
+                <div class="skill-card card"></div>
+            </div>
+
+        </section>
+    </div>
 </body>
 </html>
