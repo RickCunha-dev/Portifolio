@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 body {
@@ -37,7 +37,7 @@ body::before {
         linear-gradient(90deg, rgba(255, 72, 0, 0.03) 1px, transparent 3px);
     background-size: 50px 50px;
     pointer-events: none;
-    z-index: 10;
+    z-index: -1;
 }
 
 /* HEADER */
@@ -171,9 +171,10 @@ body::before {
 }
 
 .buttons__Hero #conect {
+    
     font-size: 15px;
     padding: 14px 35px;
-    background: var(--bg);
+    background: transparent;
     border: 1px solid var(--azul);
     color: var(--azul);
     font-weight: 800;

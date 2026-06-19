@@ -10,7 +10,7 @@
     padding: 0;
 }
 
-.parte1 {
+.parte {
     height: 100vh;
     border-left: 4px dashed var(--borda);
     border-right: 4px dashed var(--borda);
