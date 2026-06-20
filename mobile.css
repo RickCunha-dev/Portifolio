@@ -1,44 +1,14 @@
-@media (max-width: 320px) {
+
+@media (max-width: 425px) {
 
     body {
         margin: 0;
         padding: 0;
         width: 100%;
+        overflow-x: hidden;
     }
 
-    .hero {
-        width: 320px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero .bio {
-        width: 320px;
-        padding: 20px 16px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .hero .bio p {
-        margin: 0;
-        padding-left: 10px;
-        margin-right: 20px;
-    }
-    
     .site-header {
-        max-width: 320px;
-        font-size: 10px;
-    }
-    
-    .site-header__brand {
-        width: 150px;
-    }
-
-    .site-header__brand .data {
-        font-size: 19px;
-        text-align: center;
         width: 100%;
     }
 
@@ -55,100 +25,79 @@
         display: none;
     }
 
+    .hero {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero .bio {
+        width: 100%;
+        padding: 20px 16px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
     .hero h1 {
-        font-size: 40px;
         text-align: center;
-        width: 200px;
+        max-width: 90%;
         line-height: 1.0;
         margin-top: 40px;
         margin-left: 0;
     }
 
     .hero h2 {
-        width: 200px;
+        max-width: 90%;
         line-height: 1.0;
         letter-spacing: 0;
         text-align: center;
-        font-size: 20px;
-        margin: 20px 0 20px 0;
+        margin: 20px 0;
     }
 
     .hero p {
-        width: 200px;
+        max-width: 90%;
         text-align: center;
-        font-size: 12px;
         padding-left: 10px;
+        margin: 0;
+        box-sizing: border-box;
     }
 
     .hero .buttons__Hero {
-        margin: 20px 0px 0px 0px;
+        margin: 20px 0 0 0;
         padding: 0;
-        width: 320px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
     }
 
-    .hero .buttons__Hero #viewProject {
-        width: 120px;
-        font-size: 13px;
-        padding: 20px 10px;
-        letter-spacing: 0px;
-    }
-
-    .hero .buttons__Hero #conect {
-        width: 120px;
-        text-align: center;
-        padding: 20px 10px;
-        margin: 0;
-    }
-
+    /* ORBIT */
     .profile-orbit-container {
-        width: 320px;
+        width: 100%;
         margin: 0;
-        min-height: 340px;
         overflow: hidden;
-    }
-
-    .profile-frame {
-        width: 150px;
-        height: 150px;
     }
 
     .profile-frame__tag {
         display: none;
     }
 
-    .orbit-ring-1 {
-        width: 200px;
-        height: 200px;
-        margin: -100px 0 0 -100px;
-    }
-
-    .orbit-ring-2 {
-        width: 260px;
-        height: 260px;
-        margin: -130px 0px 0px -130px;
-    }
-
-    .orbit-ring-3 {
-        width: 320px;
-        height: 320px;
-        margin: -160px 0 0 -160px;
-    }
-
     .parte {
-        width: 320px;
+        width: 100%;
         margin: 0;
         display: flex;
         align-items: center;
         flex-direction: column;
+        box-sizing: border-box;
     }
 
     .about-me {
+        width: 100%;
         padding: 0;
-        width: 320px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -156,11 +105,7 @@
     }
 
     .title {
-        width: 320px;
-    }
-
-    .line-title {
-        width: 100px;
+        width: 100%;
     }
 
     .about-grid {
@@ -175,23 +120,14 @@
         width: 100%;
     }
 
-    .about__subtitle {
-        font-size: 8px;
-    }
-
-    .parte h1 {
-        font-size: 30px;
-    }
-
     .parte p {
-        font-size: 12px;
         text-align: center;
-        width: 200px;
+        max-width: 90%;
     }
 
     .about-me .about-status {
         margin-top: 30px;
-        width: 200px;
+        width: 100%;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -203,16 +139,6 @@
         align-items: center;
         justify-content: center;
         padding: 10px;
-        width: 150px;
-    }
-
-    .about-me .about-status .info .label-status {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .about-me .about-status .info .value-status {
-        font-size: 10px;
         width: 100%;
     }
 
@@ -221,6 +147,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .stacks .card {
@@ -228,11 +155,9 @@
     }
 
     .stacks-container h1 {
-        height: 70px;
-        display: flex;
-        width: 280px;
-        text-align: start;
-        padding: 0px 30px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 16px;
     }
 
     .container-project {
@@ -240,529 +165,174 @@
         flex-direction: column;
         width: 100%;
         padding: 10px 16px;
+        box-sizing: border-box;
     }
 
     .container-project .card-project {
         width: 100%;
         padding: 24px 16px;
+        box-sizing: border-box;
     }
 
-    .container-project .card-project h1 {
-        font-size: 19px;
-        padding: 0;
+    .about-me .about-grid {
         width: 100%;
+        font-size: 18px;
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .site-header__brand { 
+        width: 150px; 
+    }
+    .site-header__brand .data { 
+        font-size: 19px; 
+    }
+
+    .hero h1 { 
+        font-size: 40px; 
+    }
+    .hero h2 { 
+        font-size: 20px; 
+    }
+    .hero p  { 
+        font-size: 12px; 
+    }
+
+    .hero .buttons__Hero #viewProject,
+    .hero .buttons__Hero #conect {
+        width: 120px;
+        padding: 20px 10px;
+        font-size: 13px;
+    }
+
+    .profile-frame { 
+        width: 150px; height: 150px; 
+    }
+    .profile-orbit-container { 
+        min-height: 340px; 
+    }
+
+    .orbit-ring-1 { 
+        width: 200px; 
+        height: 200px; 
+        margin: -100px 0 0 -100px; 
+    }
+    .orbit-ring-2 { 
+        width: 260px; 
+        height: 260px; 
+        margin: -130px 0 0 -130px; 
+    }
+    .orbit-ring-3 { 
+        width: 320px; 
+        height: 320px;
+        margin: -160px 0 0 -160px; 
+    }
+
+    .about__subtitle { 
+        font-size: 8px; 
+    }
+    .parte h1 { 
+        font-size: 30px; 
+    }
+    .container-project .card-project h1 { 
+        font-size: 19px; 
+    }
+
+    .about-me .about-grid {
+        width: 100%;
+        font-size: 18px;
+        padding: 0;
     }
 }
 
 
 @media (min-width: 321px) and (max-width: 375px) {
 
-    body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
+    .site-header__brand { width: 160px; }
+    .site-header__brand .data { font-size: 22px; }
 
-    .hero {
-        width: 375px;
-        flex-direction: column;
-        align-items: center;
-    }
+    .hero h1 { font-size: 46px; }
+    .hero h2 { font-size: 22px; }
+    .hero p  { font-size: 13px; }
 
-    .hero .bio {
-        width: 375px;
-        padding: 20px 20px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .hero .bio p {
-        margin: 0;
-        padding-left: 10px;
-        margin-right: 20px;
-    }
-
-    .site-header {
-        max-width: 375px;
-        font-size: 11px;
-    }
-
-    .site-header__brand {
-        width: 160px;
-    }
-
-    .site-header__brand .data {
-        font-size: 22px;
-        text-align: center;
-        width: 100%;
-    }
-
-    .site-header .v {
-        display: none;
-    }
-
-    .main-nav {
-        padding: 0;
-        margin: 0;
-    }
-
-    .main-nav .main-nav__list {
-        display: none;
-    }
-
-    .hero h1 {
-        font-size: 46px;
-        text-align: center;
-        width: 240px;
-        line-height: 1.0;
-        margin-top: 40px;
-        margin-left: 0;
-    }
-
-    .hero h2 {
-        width: 240px;
-        line-height: 1.0;
-        letter-spacing: 0;
-        text-align: center;
-        font-size: 22px;
-        margin: 20px 0 20px 0;
-    }
-
-    .hero p {
-        width: 260px;
-        text-align: center;
-        font-size: 13px;
-        padding-left: 10px;
-    }
-
-    .hero .buttons__Hero {
-        margin: 20px 0px 0px 0px;
-        padding: 0;
-        width: 375px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .hero .buttons__Hero #viewProject {
-        width: 140px;
-        font-size: 13px;
-        padding: 20px 10px;
-        letter-spacing: 0px;
-    }
-
+    .hero .buttons__Hero #viewProject,
     .hero .buttons__Hero #conect {
         width: 140px;
-        text-align: center;
         padding: 20px 10px;
-        margin: 0;
-    }
-
-    .profile-orbit-container {
-        width: 375px;
-        margin: 0;
-        min-height: 380px;
-        overflow: hidden;
-    }
-
-    .profile-frame {
-        width: 170px;
-        height: 170px;
-    }
-
-    .profile-frame__tag {
-        display: none;
-    }
-
-    .orbit-ring-1 {
-        width: 230px;
-        height: 230px;
-        margin: -115px 0 0 -115px;
-    }
-
-    .orbit-ring-2 {
-        width: 300px;
-        height: 300px;
-        margin: -150px 0 0 -150px;
-    }
-
-    .orbit-ring-3 {
-        width: 370px;
-        height: 370px;
-        margin: -185px 0 0 -185px;
-    }
-
-    .parte {
-        width: 375px;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .about-me {
-        padding: 0;
-        width: 375px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .title {
-        width: 375px;
-    }
-
-    .line-title {
-        width: 120px;
-    }
-
-    .about-grid {
-        margin-right: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-me__01 {
-        width: 100%;
-    }
-
-    .about__subtitle {
-        font-size: 9px;
-    }
-
-    .parte h1 {
-        font-size: 32px;
-    }
-
-    .parte p {
         font-size: 13px;
-        text-align: center;
-        width: 240px;
     }
 
-    .about-me .about-status {
-        margin-top: 30px;
-        width: 240px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+    .profile-frame { width: 170px; height: 170px; }
+    .profile-orbit-container { min-height: 380px; }
+
+    .orbit-ring-1 { width: 230px; 
+        height: 230px; 
+        margin: -115px 0 0 -115px; 
+    }
+    .orbit-ring-2 { 
+        width: 300px; 
+        height: 300px; 
+        margin: -150px 0 0 -150px; 
+    }
+    .orbit-ring-3 { 
+        width: 370px; 
+        height: 370px; 
+        margin: -185px 0 0 -185px; 
     }
 
-    .about-me .about-status .info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        width: 180px;
-    }
-
-    .about-me .about-status .info .label-status {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .about-me .about-status .info .value-status {
-        font-size: 11px;
+    .about__subtitle { font-size: 9px; }
+    .parte h1 { font-size: 32px; }
+    .container-project .card-project h1 { font-size: 20px; }
+    .about-me .about-grid {
         width: 100%;
-    }
-
-    .stacks {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .stacks .card {
-        width: 90%;
-    }
-
-    .stacks-container h1 {
-        height: 70px;
-        display: flex;
-        width: 320px;
-        text-align: start;
-        padding: 0px 30px;
-    }
-
-    .container-project {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 10px 16px;
-    }
-
-    .container-project .card-project {
-        width: 100%;
-        padding: 24px 20px;
-    }
-
-    .container-project .card-project h1 {
-        font-size: 20px;
+        font-size: 18px;
         padding: 0;
-        width: 100%;
     }
 }
 
+
 @media (min-width: 376px) and (max-width: 425px) {
 
-    body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
+    .site-header__brand { width: 180px; }
+    .site-header__brand .data { font-size: 24px; }
 
-    .hero {
-        width: 425px;
-        flex-direction: column;
-        align-items: center;
-    }
+    .hero h1 { font-size: 50px; }
+    .hero h2 { font-size: 24px; }
+    .hero p  { font-size: 14px; }
 
-    .hero .bio {
-        width: 425px;
-        padding: 20px 24px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .hero .bio p {
-        margin: 0;
-        padding-left: 10px;
-        margin-right: 20px;
-    }
-
-    .site-header {
-        max-width: 425px;
-        font-size: 12px;
-    }
-
-    .site-header__brand {
-        width: 180px;
-    }
-
-    .site-header__brand .data {
-        font-size: 24px;
-        text-align: center;
-        width: 100%;
-    }
-
-    .site-header .v {
-        display: none;
-    }
-
-    .main-nav {
-        padding: 0;
-        margin: 0;
-    }
-
-    .main-nav .main-nav__list {
-        display: none;
-    }
-
-    .hero h1 {
-        font-size: 50px;
-        text-align: center;
-        width: 280px;
-        line-height: 1.0;
-        margin-top: 40px;
-        margin-left: 0;
-    }
-
-    .hero h2 {
-        width: 280px;
-        line-height: 1.0;
-        letter-spacing: 0;
-        text-align: center;
-        font-size: 24px;
-        margin: 20px 0 20px 0;
-    }
-
-    .hero p {
-        width: 300px;
-        text-align: center;
-        font-size: 14px;
-        padding-left: 10px;
-    }
-
-    .hero .buttons__Hero {
-        margin: 20px 0px 0px 0px;
-        padding: 0;
-        width: 425px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 14px;
-    }
-
-    .hero .buttons__Hero #viewProject {
-        width: 160px;
-        font-size: 13px;
-        padding: 20px 10px;
-        letter-spacing: 0px;
-    }
-
+    .hero .buttons__Hero #viewProject,
     .hero .buttons__Hero #conect {
         width: 160px;
-        text-align: center;
         padding: 20px 10px;
-        margin: 0;
+        font-size: 13px;
     }
 
-    .profile-orbit-container {
-        width: 425px;
-        margin: 0;
-        min-height: 420px;
-        overflow: hidden;
+    .profile-frame { 
+        width: 190px; 
+        height: 190px; 
     }
+    .profile-orbit-container { min-height: 420px; }
 
-    .profile-frame {
-        width: 190px;
-        height: 190px;
-    }
-
-    .profile-frame__tag {
-        display: none;
-    }
-
-    .orbit-ring-1 {
-        width: 260px;
+    .orbit-ring-1 { 
+        width: 260px; 
         height: 260px;
-        margin: -130px 0 0 -130px;
+         margin: -130px 0 0 -130px; 
+        }
+    .orbit-ring-2 { 
+        width: 340px; 
+        height: 340px; 
+        margin: -170px 0 0 -170px; 
+    }
+    .orbit-ring-3 { 
+        width: 420px; 
+        height: 420px; 
+        margin: -210px 0 0 -210px; 
     }
 
-    .orbit-ring-2 {
-        width: 340px;
-        height: 340px;
-        margin: -170px 0 0 -170px;
-    }
-
-    .orbit-ring-3 {
-        width: 420px;
-        height: 420px;
-        margin: -210px 0 0 -210px;
-    }
-
-    .parte {
-        width: 425px;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .about-me {
-        padding: 0;
-        width: 425px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .title {
-        width: 425px;
-    }
-
-    .line-title {
-        width: 140px;
-    }
-
-    .about-grid {
-        margin-right: 0;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-me__01 {
-        width: 100%;
-    }
-
-    .about__subtitle {
-        font-size: 10px;
-    }
-
-    .parte h1 {
-        font-size: 34px;
-    }
-
-    .parte p {
-        font-size: 14px;
-        text-align: center;
-        width: 280px;
-    }
-
-    .about-me .about-status {
-        margin-top: 30px;
-        width: 280px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about-me .about-status .info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        width: 200px;
-    }
-
-    .about-me .about-status .info .label-status {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .about-me .about-status .info .value-status {
-        font-size: 12px;
-        width: 100%;
-    }
-
-    .stacks {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .stacks .card {
-        width: 90%;
-    }
-
-    .stacks-container h1 {
-        height: 70px;
-        display: flex;
-        width: 360px;
-        text-align: start;
-        padding: 0px 30px;
-    }
-
-    .container-project {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 10px 20px;
-    }
-
-    .container-project .card-project {
-        width: 100%;
-        padding: 24px 24px;
-    }
-
-    .container-project .card-project h1 {
-        font-size: 21px;
-        padding: 0;
-        width: 100%;
-    }
+    .about__subtitle { font-size: 10px; }
+    .parte h1 { font-size: 34px; }
+    .container-project .card-project h1 { font-size: 21px; }
 }
