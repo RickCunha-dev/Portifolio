@@ -247,11 +247,33 @@
         width: 100%;
     }
 
+    .stacks-container h1 {
+        /* border: 1px solid red; */
+        height: 70px;
+        display: flex;
+        width: 280px;
+        text-align: start;
+        padding: 0px 30px;
+    }
    .container-project {
-    display: none;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
    }
    
 
+   .container-project .card-project {
+    width: 100%;
+    /* padding: 0; */
+   }
+
+   .container-project .card-project h1 {
+    font-size: 19px;
+    padding: 0;
+    width: 100%;
+   }
 
     
 }
