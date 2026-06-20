@@ -40,7 +40,7 @@ body::before {
     z-index: -1;
 }
 
-/* HEADER */
+
 .site-header {
     border-bottom: 1px solid var(--laranja);
     padding: 6px;
@@ -118,8 +118,9 @@ body::before {
     /* border: 1px solid red; */
     margin-top: 5%;
     margin-left: 6%;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 0.8;
+    
 }
 
 .hero h2 {
@@ -151,7 +152,7 @@ body::before {
     z-index: 1;
 }
 
-/* BOTÕES */
+
 .buttons__Hero #viewProject {
     border: 1px solid var(--laranja);
     font-size: 15px;
