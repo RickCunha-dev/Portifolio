@@ -1,0 +1,88 @@
+#contatos {
+    align-self: stretch;
+    /* display: none; */
+}
+
+.container__contatos {
+    border: 2px solid var(--borda);
+    margin-top: 30px;
+    padding: 60px 50px;
+    transition:  all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.container__contatos:hover {
+    box-shadow: 10px 10px 0px var(--azul);
+    transform: translateX(-10px);
+    transform: translateY(-10px);
+}
+
+.parte .container__contatos {
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 400px;
+}
+
+.container__contatos h4 {
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.container__contatos .boxes {
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.box-contact {
+    border: 1px solid var(--borda);
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.box-contact:hover {
+    background: rgba(255, 111, 0, 0.162);
+    transform: translateX(-10px);
+    transform: translateY(-10px);
+}
+
+.icon-email::before,
+.icon-linkedin::before,
+.icon-git::before {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    color: var(--laranja);
+    line-height: 1;
+}
+
+.icon-email::before {
+    content: "@";
+    font-size: 3rem;
+}
+
+.icon-linkedin::before {
+    content: "in";
+    font-size: 3rem;
+}
+
+.icon-git::before {
+    content: "git";
+    font-size: 2.5rem;
+}
+
+.alert-contact {
+    color: rgb(35, 230, 0);
+}
+
+
