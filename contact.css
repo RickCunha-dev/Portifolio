@@ -12,8 +12,8 @@
 
 .container__contatos:hover {
     box-shadow: 10px 10px 0px var(--azul);
-    transform: translateX(-10px);
-    transform: translateY(-10px);
+    transform: translate(-10px, -10px);
+
 }
 
 .parte .container__contatos {
@@ -52,8 +52,8 @@
 
 .box-contact:hover {
     background: rgba(255, 111, 0, 0.162);
-    transform: translateX(-10px);
-    transform: translateY(-10px);
+    transform: translate(-10px, -10px);
+
 }
 
 .icon-email::before,

@@ -34,13 +34,14 @@
 }
 .card-project:hover {
     box-shadow: 10px 10px 0px var(--azul);
-    transform: translateX(-10px);
-    transform: translateY(-12px);
+    transform: translate(-10px, -10px);
+   
 }
 .img-project {
     border: 1px solid var(--borda);
     height: 250px;
     margin-bottom: 30px;
+    overflow: hidden;
     background: 
     linear-gradient(rgba(99, 99, 99, 0.03) 1px, transparent 2px),
     linear-gradient(90deg, rgba(99, 99, 99, 0.03) 1px, transparent 2px);
@@ -61,13 +62,18 @@
 
 .card-project p {
     margin-top: 30px;
-  
 }
 
 
 .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 5px;
+    text-align: center;
 }
+
+
 
 .stacks__project {
     /* border: 1px solid red; */
@@ -75,7 +81,7 @@
     padding: 10px;
     gap: 10px;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     margin-top: 20px;
 }
 
